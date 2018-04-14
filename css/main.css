@@ -12,7 +12,8 @@ body{
 header {
     background-color: #111111; 
     height: 650px;
-    background-image: linear-gradient(#111111, #1f1f1f, transparent), url(../images/2.jpg)
+    background-image: linear-gradient(rgba(17,17, 17, 1), rgba(17,17, 17, .8)), url(../images/2.jpg);
+    background-attachment: fixed;
 }
 .sidebar {
     width: 50px;
@@ -28,23 +29,30 @@ header {
 .links {
     padding-bottom: 40px;
 }
-.links > div.social {
+.links > a.social {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(246, 246, 246);
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #EDC661;
+    /* background-color: #EDC661; */
     margin: auto;
     margin-top: 25px;
 }
 .links2 {
     display: none;
 }
-.links2 > div.social {
+.links2 > a.social {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(246, 246, 246);
     float: left;
     margin-top: 0;
     margin-right: 10px;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     /* header {
         height: 100vh;
     } */
@@ -96,6 +104,11 @@ header {
     color: rgb(237, 198, 97);
     text-decoration: none; 
 }
+@media (max-width: 1024px) {
+    #me {
+        margin: auto;
+    }
+}
 @media (max-width: 600px) {
     #me {
         width: 90%;
@@ -108,4 +121,23 @@ header {
     .about {
         font-size: 0.8em;
     }
+}
+#works {
+    display: flex;
+    align-items: center;
+}
+.image {
+    width: 600px;
+    height: 300px;
+    /* background: url(../images/browser-bg.png);
+    background-size: cover; */
+    /* box-shadow: 1px 1px 10px #494949; */
+    display: inline-block;
+}
+.image img {
+    max-width: 100%;
+    margin: 0;
+}
+.copy {
+    width: 400px;
 }
