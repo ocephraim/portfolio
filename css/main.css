@@ -175,6 +175,8 @@ section {
     max-height: 100%;
     margin: auto;
     transition: all 5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
 }
 .copy {
     max-width: 300px;
@@ -199,10 +201,14 @@ section {
     font-weight: bold;
     color: rgb(246, 246, 246);
     /* display: none; */
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
 @media (min-width: 1024px) {
     .image:hover .worklink {
+        -webkit-transform: translateY(-60px);
+        -moz-transform:  translateY(-60px); 
         transform: translateY(-60px);
         display: inline;
     }
