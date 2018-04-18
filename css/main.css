@@ -49,6 +49,21 @@ header {
     margin-top: 0;
     margin-right: 10px;
 }
+.medium:hover i {
+    color: #0be370;
+}
+.linkedin:hover i {
+    color: #0077b5
+}
+.twitter:hover i {
+    color: #55acee;
+}
+.github:hover i {
+    color: white;
+}
+.behance:hover i {
+ color: #1769ff;
+}
 @media (max-width: 800px) {
     .sidebar {
         display: none;
@@ -153,6 +168,7 @@ section {
     background-color: rgb(246, 246, 246);
     padding-top: 72px;
     padding-bottom: 72px;
+    transition-duration: 2s;
 }
 #work1, #work2 {
     height: 300px;
