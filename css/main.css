@@ -25,7 +25,7 @@ header {
     justify-content: flex-end;
 }
 .links {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 .links > a.social {
     display: block;
@@ -37,6 +37,14 @@ header {
     border-radius: 50%;
     margin: auto;
     margin-top: 25px;
+    transition: 0.4s ease-in-out all;
+}
+.links:hover > a.social {
+    opacity: 0.3;
+}
+.links > a.social:hover {
+    opacity: 1;
+    font-size: 1.2em;
 }
 .links2 {
     display: none;
